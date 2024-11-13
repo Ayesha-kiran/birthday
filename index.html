@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Eman Fawad!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fce4ec;
+            color: #880e4f;
+            margin-top: 100px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 18px;
+        }
+    </style>
+    <script>
+        function validateName() {
+            const nameInput = document.getElementById('name').value.trim();
+            if (nameInput === "Eman Fawad") {
+                window.location.href = "birthday.html";
+            } else {
+                alert("Error: Name does not match! Please enter the correct name.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to Eman's Birthday Page!</h1>
+    <p>Please enter the birthday girl's name to continue:</p>
+    <input type="text" id="name" placeholder="Enter name here">
+    <button onclick="validateName()">Celebrate</button>
+</body>
+</html>
